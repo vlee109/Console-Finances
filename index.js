@@ -106,6 +106,8 @@ for (var i = 1; i < finances.length; i++) {
 }
 var averageChange = totalChange / (finances.length - 1);
 
+var rounded = averageChange.toFixed(2);
+
 //Task 4//
 var maxIncrease = 0;
 
@@ -139,7 +141,7 @@ console.log("Financial Analysis");
 console.log("---------------");
 
 console.log("Total Month: " + count);
-console.log("Total: £" + total);
-console.log("Average Change: £" + averageChange);
-console.log("Greatest Increase in Profits/Losses: £" + maxIncrease);
-console.log("Greatest Decrease in Profits/Losses:£" + change);
+console.log("Total: $" + total);
+console.log("Average Change: $" + rounded);
+console.log("Greatest Increase in Profits/Losses: $" + maxIncrease);
+console.log("Greatest Decrease in Profits/Losses: $" + change);
